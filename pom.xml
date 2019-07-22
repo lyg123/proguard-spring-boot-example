@@ -15,7 +15,7 @@
     </parent>
 
     <properties>
-        <java.version>11</java.version>
+        <java.version>8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <proguard.version>6.1.0beta2</proguard.version>
@@ -102,7 +102,8 @@
                     <injarNotExistsSkip>true</injarNotExistsSkip>
                     <libs>
                         <!--Put here your libraries if required-->
-                        <!--<lib>${java.home}/lib/rt.jar</lib>-->
+                        <lib>${java.home}/lib/rt.jar</lib>
+                        <lib>${java.home}/lib/jce.jar</lib>
                     </libs>
                 </configuration>
                 <dependencies>
